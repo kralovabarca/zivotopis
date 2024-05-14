@@ -1,229 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grace Hopper</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Barbora Kralova">
+    <meta name="description" content="Tahle stránka obsahuje všechny věci, které se učím o HTML">
+    
+    <title>Moje první webová stránka</title>
+    <link rel="icon" href="HTML5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
 <body>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <header>
+        <h1>PRAKTICKÉ INFORMACE</h1>
+    
+        <nav aria-labelledby="Hlavnínavigačnímenu">
+            <h2 id="Hlavnínavigačnímenu">Hlavní menu</h2>
+    
+            <ul>
+                <li>
+                    <a href="#html">Nauč se HTML</a>
+                </li>
+                <li>
+                    <a href="#dovolená">plánování dovolené</a>
+                </li>
+                <li>
+                    <a href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    
+    <main>
+        <article id="html">
+            <section>
+                <h2>CESTOVNÍ DOKLADY A VÍZA</h2>
+    
+                <hr>
+    
+                <p>Doklady: Pro vstup na Island je požadován platný cestovní pas s dobou platnosti nejméně tři měsíce po
+                    návratu.
+                    Víza a režim vstupu: Cestovní režim pro občany ČR při cestě na Island - bezvízový styk do 90 dnů
+                    pobytu.
+                    Upozorňujeme, že informace o vízech se mohou měnit. Před cestou doporučujeme kontaktovat příslušnou
+                    ambasádu.</p>
+    
+                <img src="img/vacation.jpg" alt="Dovolená" title="Jak na dovolenou" width="500" height="300">
+            </section>
+    
+            <section>
+                <h2>INFORMACE NA CESTU</h2>
+    
+                <hr>
+    
+                <p>Elektřina: 220V 50Hz. Zásuvky našeho typu
+                    Telefon: kanceláře <abbr title="islandský telecom">Landssíminn</abbr> sídlí obvykle v místních
+                    poštovních
+                    pobočkách, kde můžete uskutečnit místní i mezinárodní hovory. Často naleznete telefonní automaty
+                    před poštou
+                    nebo u čerpací stanice. Island užívá GSM i NMT mobilní síť, GSM má omezený rozsah, ale pokrývá
+                    většinu měst a
+                    vesnic. NMT pokrývá téměř celou zemi.
+                    Internet: v Reykjavíku a v Akureyri je několik <em>internetových kaváren</em>, jinde najdete
+                    připojení ve
+                    veřejných knihovnách nebo v turistických kancelářích.</p>
+    
+                <h3>Cestování</h3>
+                <aside>
+                    <details>
+                        <summary>
+                            Hádejte kolik za den procestuju <mark>hodin?</mark>
+                        </summary>
+                        <p>Je to zhruba nějaké <time datetime="2h 15m 0s">2 hodiny</time></p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>Moje denní aktivity</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th id="Čas" scope="col">Čas</th>
+                            <th scope="col">Aktivita</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="Ráno" scope="row">Ráno</th>
+                            <td>
+                                <time datetime="08:00">8 hodin</time>-<time datetime="11:00">11 hodin</time>
+                            </td>
+                            <td>Psát kódy</td>
+                        </tr>
+                        <tr>
+                            <th id="Přestávka" scope="row">Přestávka</th>
+                            <td>
+                                <time datetime="11:00">11 hodin</time>-<time datetime="12:00">12 hodin</time>
+                            </td>
+                            <td>Sníst si oběd</td>
+                        </tr>
+                        <tr>
+                            <th id="Opdoledne" scope="row">Odpoledne</th>
+                            <td>
+                                <time datetime="12:00">12 hodin</time>-<time datetime="17:00">17 hodin</time>
+                            </td>
+                            <td>Učit se na další kurzy</td>
+                        </tr>
+    
+                        <tr>
+                            <th id="Večer" scope="row">Večer</th>
+                            <td rowspan="2">Všechen ostatní čas</td>
+                            <td>Volný čas</td>
+                        </tr>
+                        <tr>
+                            <th id="Noc" scope="row">Noc</th>
+                            <td>Spánek</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">A tohle dělám celý den. Jen jím,
+                                spím a píšu kódy!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+    
+                <p>Pošta: poštu naleznete ve všech větších městech. Otevřeno je od <time datetime="09:00">9
+                        hodin</time>
+                    do <time datetime="16:30">16:30 hodin</time> pondělí - pátek. Mezinárodní dopisy bývají
+                    doručeny za tři až
+                    pět dní.
+                    Očkování: Pro vstup na Island nejsou vyžadována <strong>žádná povinná očkování.</strong></p>
+            </section>
+    
+    
+        </article>
+    
+        <article id="dovolená">
+            <p> Co tam najdeme:
+    
+                <br>&nbsp;&nbsp;&nbsp;...jsou tam jeskyně.
+                <br>&nbsp;&nbsp;&nbsp;...jsou tam sopky.
+                <br>&nbsp;&nbsp;&nbsp;...jsou tam <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/">MDN</a>
+                </abbr>
+            </p>
+            <figure>
+                <img src="img/caribbean.jpg" alt="Karibik" title="Tak vypadá Karibik" width="500" height="300"
+                    loading="lazy">
+                <figcaption>Takhle vypadá Karibik.</figcaption>
+            </figure>
+    
+            <!--- TODO: Přidat více míst -->
+    
+    
+            <p>Najdeme je na adrese:</p>
+            <address>
+                Ondřeje Sekory 455 <br> Ostrava
+            </address>
+    
+            <ul>
+                <li>pondělí</li>
+                <li>úterý</li>
+                <li>středa</li>
+            </ul>
+    
+            <hr>
+    
+            <h3>Úkoly</h3>
+            <ol>
+                <li>vysát</li>
+                <li>umýt nádobí</li>
+                <li>vyprat</li>
+            </ol>
+    
+            <dl>
+                <dt>Jížní Pól</dt>
+                <dd>Určitě je tam <strong>chladno</strong></dd>
+    
+                <dt>Severní Pól</dt>
+                <dd>Tdy je taky zima</dd>
+    
+                <dt>Antarktida</dt>
+                <dd>Tady jsou tučňáci.</dd>
+            </dl>
+    
+        </article>
+    
+        <hr>
+        <article id="Kontakt">
+            <h2>Kontaktujte mě</h2>
+            <p>Dejte mi vědět!</p>
+        
+            <form action="http://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Osobní info</legend>
+                    <p>
+                        <label for="firstname">Jméno:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Eva" autocomplete="on" required
+                            autofocus>
+                    </p>
+                    <p>
+                        <label for="surname">Příjmení:</label>
+                        <input type="text" name="surname" id="surname" placeholder="Novotná" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Heslo:</label>
+                        <input type="password" name="password" id="password" placeholder="your secret" required>
+                    </p>
+                    <p>
+                        <label for="phone">Telefonní číslo:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+420" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                            required>
+                    </p>
+                    <p>
+                        <label for="decade">Oblíbená dekáda:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                    </p>
+                    <p>
+                        <label for="coffee">Oblíbená káva:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Kávy">
+                                <option value="obyčejná káva">Obyčejná káva</option>
+                                <option value="ledová káva">Ledová káva</option>
+                            </optgroup>
+                            <optgroup label="Espressa">
+                                <option value="Latté" selected>Latté</option>
+                                <option value="Cappuccino">Cappuccino</option>
+                                <option value="Jiné">Jiné</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <!-- <p>
+                            <label for="coffee">Oblíbená káva:</label>
+                            <input type="text" name="coffee"
+                            id="coffee" list="coffee-list">
+                            <datalist id="coffee-list">
+                                <option value="obyčejná káva">
+                                <option value="ledová káva">
+                                <option value="Latté">
+                                <option value="Cappuccino">
+                                <option value="Jiné">
+                            </datalist>
+                        </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Jaké je tvé oblíbené jídlo?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="jiné" value="jiné">
+                        <label for="jiné">Jiné</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Jaký je tvůj mazlíček?</legend>
+                    <p>
+                        <input type="checkbox" name="mazlíčci" id="pes" value="pes">
+                        <label for="pes">Pes</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="mazlíčci" id="kočka" value="kočka">
+                        <label for="kočka">Kočka</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="mazlíčci" id="rybička" value="rybička">
+                        <label for="rybička">Rybička</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="mazlíčci" id="králík" value="králík">
+                        <label for="králík">Králík</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Pošli mi zprávu</legend>
+                    <label for="message">Tvoje zpráva</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Tady piš"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        &lt;&lt;&lt; &copy; <a href="about.html">Barča Králová</a> &gt;&gt;&gt;
+        <p>
+            <a href="#">Zpět nahoru</a>
+        </p>
+    </footer>
 
-    <div class="resume">
-        <div class="resume_left">
-            <div class="resume_profile">
-                <img src="profile.jpg" alt="Profile picture" />
-            </div>
-            <div class="resume_content">
-                <div class="resume_item resume_info">
-                    <div class="title">
-                        <p class="bold">Bc. Barbora Králová</p>
-                        <p class="regular">QA / Tester</p>
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="icon">
-                                <i class="fas fa-map-signs"></i>
-                            </div>
-                            <div class="data">
-                                
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <div class="data">+420 731 843 679</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="data">kralova@seznam.cz</div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="data">github.com/my-github</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="resume_item resume_skills">
-                    <div class="title">
-                        <p class="bold">skills</p>
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="skill_name">HTML</div>
-                            <div class="skill_progress">
-                                <span style="width: 80%"></span>
-                            </div>
-                            <div class="skill_per">80%</div>
-                        </li>
-                        <li>
-                            <div class="skill_name">CSS</div>
-                            <div class="skill_progress">
-                                <span style="width: 70%"></span>
-                            </div>
-                            <div class="skill_per">70%</div>
-                        </li>
-                        <li>
-                            <div class="skill_name">Testing</div>
-                            <div class="skill_progress">
-                                <span style="width: 90%"></span>
-                            </div>
-                            <div class="skill_per">90%</div>
-                        </li>
-                        <li>
-                            <div class="skill_name">Agile</div>
-                            <div class="skill_progress">
-                                <span style="width: 60%"></span>
-                            </div>
-                            <div class="skill_per">60%</div>
-                        </li>
-                        <li>
-                            <div class="skill_name">git</div>
-                            <div class="skill_progress">
-                                <span style="width: 40%"></span>
-                            </div>
-                            <div class="skill_per">40%</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="resume_item resume_social">
-                    <div class="title">
-                        <p class="bold">Social</p>
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="icon">
-                                <i class="fab fa-facebook-square"></i>
-                            </div>
-                            <div class="data">
-                                <p class="semi-bold">Facebook</p>
-                                <p>Me@facebook</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fab fa-twitter-square"></i>
-                            </div>
-                            <div class="data">
-                                <p class="semi-bold">Twitter</p>
-                                <p>Me@twitter</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                            <div class="data">
-                                <p class="semi-bold">Youtube</p>
-                                <p>Me@youtube</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="data">
-                                <p class="semi-bold">Linkedin</p>
-                                <p>Me@linkedin</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="resume_right">
-            <div class="resume_item resume_about">
-                <div class="title">
-                    <p class="bold">About me</p>
-                </div>
-                <p>
-                    Hello! I found the first bug even. Poor moth got grilled inside our computer.
-                </p>
-            </div>
-            <div class="resume_item resume_work">
-                <div class="title">
-                    <p class="bold">Work Experience</p>
-                </div>
-                <ul>
-                    <li>
-                        <div class="date">2013 - 2015</div>
-                        <div class="info">
-                            <p class="semi-bold">Lorem ipsum dolor sit amet.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum, voluptatibus!
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="date">2015 - 2017</div>
-                        <div class="info">
-                            <p class="semi-bold">Lorem ipsum dolor sit amet.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum, voluptatibus!
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="date">2017 - Present</div>
-                        <div class="info">
-                            <p class="semi-bold">Lorem ipsum dolor sit amet.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum, voluptatibus!
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume_item resume_education">
-                <div class="title">
-                    <p class="bold">Education</p>
-                </div>
-                <ul>
-                    <li>
-                        <div class="date">2010 - 2013</div>
-                        <div class="info">
-                            <p class="semi-bold">Web Designing (Texas University)</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum, voluptatibus!
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="date">2000 - 2010</div>
-                        <div class="info">
-                            <p class="semi-bold">Texas International School</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum, voluptatibus!
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume_item resume_hobby">
-                <div class="title">
-                    <p class="bold">Hobby</p>
-                </div>
-                <ul>
-                    <li><i class="fas fa-book"></i></li>
-                    <li><i class="fas fa-gamepad"></i></li>
-                    <li><i class="fas fa-music"></i></li>
-                    <li><i class="fab fa-pagelines"></i></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
